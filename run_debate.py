@@ -1,4 +1,4 @@
-from debate_graph import app, retriever
+from graph.debate_graph import app, retriever
 
 topic = "Best LinkedIn content strategy for B2B SaaS companies in 2026"
 

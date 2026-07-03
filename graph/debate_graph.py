@@ -1,7 +1,7 @@
 from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from typing import TypedDict, List
-from neo4j_client import Neo4jClient
+from neo4j.neo4j_client import Neo4jClient
 
 neo4j_client = Neo4jClient()
 retriever = neo4j_client.retriever

@@ -3,7 +3,7 @@ from langchain_neo4j import Neo4jGraph
 import os
 from dotenv import load_dotenv
 
-from neo4j_retriever import Neo4jRetriever
+from neo4j.neo4j_retriever import Neo4jRetriever
 
 load_dotenv()
 
