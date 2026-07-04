@@ -1,4 +1,5 @@
 neo4j
 google-genai
-dotenv
-langchain
+python-dotenv
+langchain-openai
+langgraph

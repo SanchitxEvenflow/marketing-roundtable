@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
-from langchain_google_genai import ChatGoogleGenerativeAI
-from typing import Dict, Any
+from typing import Dict
+
 
 class BaseAgent(ABC):
-    def __init__(self, model="gemini-1.5-pro"):
-        self.llm = ChatGoogleGenerativeAI(model=model, temperature=0.7)
+    """All agents call the shared NVIDIA NIM gateway in core.llm — no per-agent
+    LLM clients, so caps/retries/usage tracking stay in one place."""
 
     @abstractmethod
     def invoke(self, input_data: Dict) -> Dict:
